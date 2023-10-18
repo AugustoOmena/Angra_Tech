@@ -9,7 +9,8 @@
     <link rel="stylesheet" type="text/css" href="assets/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fontawesome-free-5.15.4-web/css/all.css">
-   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap">
+
 </head>
 
 <body>
@@ -18,7 +19,7 @@
         <nav>
             <div class="logo">
                 <a href="#">
-                    <img width="240px" height="70px" src="assets/images/Angra TechNotWhite.png" alt="">
+                    <img width="240px" height="70px" src="assets/images/Angra TechNotWhite.png" class="logoAngra" alt="">
                 </a>
             </div>
             <div class="openMenu"><i class="fa fa-bars"></i></div>
@@ -31,15 +32,188 @@
                 <div class="closeMenu"><i class="fa fa-times"></i></div>
             </ul>
         </nav>
-
+        
     </header>
 
     <!-- Conteudo Principal -->
-    <!-- primeiro banner -->
-    <div>
-        <img width="100%" src="assets\images\angra tech.png" alt="Empreendedorismo, tecnologia e inovação, conexões experiencias e soluções para alavancar a economia. Evento nos dias 30 de novembroe 1 de dezembro">
+    <div class="imagemDeFundo">
+        <img src="assets/images/Azul.png" class="imagemCentralizada" alt="">
+        <img src="assets/images/Angra TechNotWhite.png" class="imagemPequenaCentralizada" alt="">
+        <img src="https://video-public.canva.com/VAFKHBrA9Gs/v/07eb5016af.gif" class="imagemPequenalateralizadaSuperior" alt="">
+        <img src="https://video-public.canva.com/VAFKHIeV6E8/v/07ba2e6363.gif" class="imagemPequenalateralizada" alt="">
+        <h1 class="textoSobreImagem">Conferência de<br/> empreendedorismo, <br/> tecnologia e inovação</h1>
     </div>
-    <!-- texto Principal -->
+
+    <style>
+        .imagemDeFundo {
+            position: relative;
+            text-align: left; /* Ajusta o alinhamento do texto */
+        }
+    
+        .imagemCentralizada {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    
+        .textoSobreImagem {
+            position: absolute;
+            top: 40%; /* Ajusta a posição vertical do texto ao centro */
+            left: 5%; /* Ajusta a posição horizontal do texto em relação à borda esquerda */
+            transform: translateY(-50%); /* Centraliza verticalmente */
+            color: white;
+            font-family: 'Open Sans', sans-serif; /* Substitua "Nome da Fonte" pela fonte desejada */
+            font-size: 6em; /* Ajuste o tamanho da fonte conforme necessário */
+            line-height: 1;
+        }
+
+        .imagemPequenaCentralizada {
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 315px; 
+    height: 91px;
+}
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 250px; 
+    height: 250px;
+    }
+
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 160px; 
+    height: 320px;
+    }
+
+    @media screen and (max-width: 1258px) {
+    .textoSobreImagem {
+        font-size: 5em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+    }
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 150px; 
+    height: 300px;
+    }
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 240px; 
+    height: 240px;
+    }
+}
+
+    @media screen and (max-width: 1052px) {
+    .textoSobreImagem {
+        font-size: 4em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+    }
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 140px; 
+    height: 280px;
+    }
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 230px; 
+    height: 230px;
+    }
+}
+
+    @media screen and (max-width: 944px) {
+    .textoSobreImagem {
+        font-size: 3em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+    }
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 100px; 
+    height: 200px;
+    }
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 60%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 200px;
+    }
+    }
+    @media screen and (max-width: 814px) {
+    .textoSobreImagem {
+        font-size: 45px; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+        top: 50%;
+    }
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 100px; 
+    height: 200px;
+    }
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 200px; 
+    height: 200px;
+    }
+    
+}
+
+@media screen and (max-width: 740px) {
+    .textoSobreImagem {
+        font-size: 39px; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+    }
+    .imagemPequenalateralizadaSuperior {
+    position: absolute;
+    top: 16%;
+    left: 85%;
+    transform: translateX(-50%) rotate(-45deg);
+    width: 90px; 
+    height: 180px;
+    }
+    .imagemPequenalateralizada {
+        position: absolute;
+    top: 50%;
+    left: 85%;
+    transform: translateX(-50%);
+    width: 180px; 
+    height: 180px;
+    }
+    
+}
+    </style>
+    <!-- Conteudo Principal -->
+
+
+
+
+
+
+    <!-- primeiro banner -->
+
     <div class="fundo-imagem">
         <div class="idHolder" id="sobre"></div>
         <!-- segura o id para mapeamento da pagina -->
