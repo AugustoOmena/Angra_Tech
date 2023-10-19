@@ -37,11 +37,13 @@
 
     <!-- Conteudo Principal -->
     <div class="imagemDeFundo">
-        <img src="assets/images/Azul.png" class="imagemCentralizada" alt="">
-        <img src="assets/images/Angra TechNotWhite.png" class="imagemPequenaCentralizada" alt="">
+        <img src="assets/images/Azul.png" class="imagemCentralizada" alt="">>
+        <img src="assets/images/VR.png" class="imagemP" alt="">
         <img src="https://video-public.canva.com/VAFKHBrA9Gs/v/07eb5016af.gif" class="imagemPequenalateralizadaSuperior" alt="">
         <img src="https://video-public.canva.com/VAFKHIeV6E8/v/07ba2e6363.gif" class="imagemPequenalateralizada" alt="">
         <h1 class="textoSobreImagem">Conferência de<br/> empreendedorismo, <br/> tecnologia e inovação</h1>
+        <h1 class="textoPequenoSobreImagem">CONEXÕES, EXPERIÊNCIAS E SOLUÇÕES<br/>
+            PARA ALAVANCAR A ECONOMIA</h1>
     </div>
 
     <style>
@@ -55,6 +57,16 @@
             height: auto;
             display: block;
         }
+
+        .imagemP {
+            position: absolute;
+            top: 56%; /* Ajusta a posição vertical do texto ao centro */
+            left: 57%; /* Ajusta a posição horizontal do texto em relação à borda esquerda */
+            transform: translateY(-50%); /* Centraliza verticalmente */
+            width: 500px; height: 500px;
+            z-index: 2;
+            mask-image: linear-gradient(to top, transparent 0%, black 10%);
+        }
     
         .textoSobreImagem {
             position: absolute;
@@ -63,18 +75,23 @@
             transform: translateY(-50%); /* Centraliza verticalmente */
             color: white;
             font-family: 'Open Sans', sans-serif; /* Substitua "Nome da Fonte" pela fonte desejada */
-            font-size: 6em; /* Ajuste o tamanho da fonte conforme necessário */
+            font-size: 5em; /* Ajuste o tamanho da fonte conforme necessário */
             line-height: 1;
+            z-index: 3;
         }
 
-        .imagemPequenaCentralizada {
-    position: absolute;
-    top: 0%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 315px; 
-    height: 91px;
-}
+        .textoPequenoSobreImagem {
+            position: absolute;
+            top: 70%; /* Ajusta a posição vertical do texto ao centro */
+            left: 5%; /* Ajusta a posição horizontal do texto em relação à borda esquerda */
+            transform: translateY(-50%); /* Centraliza verticalmente */
+            color: white;
+            font-family: 'Open Sans', sans-serif; /* Substitua "Nome da Fonte" pela fonte desejada */
+            font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
+            line-height: 1;
+            z-index: 3;
+        }
+
     .imagemPequenalateralizada {
         position: absolute;
     top: 60%;
@@ -82,6 +99,7 @@
     transform: translateX(-50%);
     width: 250px; 
     height: 250px;
+    z-index: 1;
     }
 
     .imagemPequenalateralizadaSuperior {
@@ -91,11 +109,12 @@
     transform: translateX(-50%) rotate(-45deg);
     width: 160px; 
     height: 320px;
+    z-index: 3;
     }
 
     @media screen and (max-width: 1258px) {
     .textoSobreImagem {
-        font-size: 5em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+        font-size: 4em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
     }
     .imagemPequenalateralizadaSuperior {
     position: absolute;
@@ -117,8 +136,15 @@
 
     @media screen and (max-width: 1052px) {
     .textoSobreImagem {
-        font-size: 4em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
+        font-size: 3em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
     }
+
+    .imagemP {
+        width: 400px; height: 400PX;
+        top: 56%; /* Ajusta a posição vertical do texto ao centro */
+            left: 57%;
+    }
+
     .imagemPequenalateralizadaSuperior {
     position: absolute;
     top: 5%;
@@ -141,6 +167,11 @@
     .textoSobreImagem {
         font-size: 3em; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
     }
+    .imagemP {
+        width: 350px; height: 350PX;
+        top: 56%; /* Ajusta a posição vertical do texto ao centro */
+        left: 57%;
+    }
     .imagemPequenalateralizadaSuperior {
     position: absolute;
     top: 7%;
@@ -161,7 +192,11 @@
     @media screen and (max-width: 814px) {
     .textoSobreImagem {
         font-size: 45px; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
-        top: 50%;
+    }
+    .imagemP {
+        width: 300px; height: 300PX;
+        top: 56%; /* Ajusta a posição vertical do texto ao centro */
+        left: 57%;
     }
     .imagemPequenalateralizadaSuperior {
     position: absolute;
@@ -176,8 +211,8 @@
     top: 40%;
     left: 85%;
     transform: translateX(-50%);
-    width: 200px; 
-    height: 200px;
+    width: 190px; 
+    height: 190px;
     }
     
 }
@@ -185,8 +220,14 @@
 @media screen and (max-width: 740px) {
     .textoSobreImagem {
         font-size: 39px; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
-        top: 55%;
     }
+
+    .imagemP {
+        width: 260px; height: 260PX;
+        top: 56%; /* Ajusta a posição vertical do texto ao centro */
+        left: 57%;
+    }
+
     .imagemPequenalateralizadaSuperior {
     position: absolute;
     top: 16%;
@@ -200,8 +241,8 @@
     top: 50%;
     left: 85%;
     transform: translateX(-50%);
-    width: 180px; 
-    height: 180px;
+    width: 160px; 
+    height: 160px;
     }
     
 }
@@ -209,7 +250,6 @@
 @media screen and (max-width: 666px) {
     .textoSobreImagem {
         font-size: 39px; /* Ajuste o tamanho da fonte para telas menores conforme necessário */
-        top: 65%;
     }
     .imagemPequenalateralizadaSuperior {
     position: absolute;
