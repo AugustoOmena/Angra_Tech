@@ -109,6 +109,9 @@ nav .logo{
     .logoAngra {
         width: 190px;
         height: 55px;
+        top: 20px; /* Ajuste a quantidade desejada para movê-lo para baixo */
+        left: 30px;
+        position: relative;
     }
 
     nav .mainMenu .closeMenu{
