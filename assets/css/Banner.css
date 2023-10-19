@@ -77,11 +77,11 @@ z-index: 1;
 
 .imagemPequenalateralizadaSuperior {
 position: absolute;
-top: 7%;
+top: 9%;
 left: 85%;
 transform: translateX(-50%) rotate(-45deg);
-width: 160px; 
-height: 320px;
+width: 100px; 
+height: 200px;
 z-index: 3;
 }
 
@@ -91,11 +91,9 @@ font-size: 4em;
 }
 .imagemPequenalateralizadaSuperior {
 position: absolute;
-top: 7%;
+top: 11%;
 left: 85%;
 transform: translateX(-50%) rotate(-45deg);
-width: 135px; 
-height: 270px;
 }
 .imagemPequenalateralizada {
 position: absolute;
@@ -113,18 +111,26 @@ font-size: 3em;
 }
 
 .imagemP {
+    width: 400px; height: 400PX;
+    top: 56%; 
+    left: 57%;
+    }
+
+.imagemPequenalateralizadaSuperior {
+    display: none;
+}
+
+.imagemP {
 width: 400px; height: 400PX;
 top: 56%; 
-    left: 57%;
+left: 57%;
 }
 
 .imagemPequenalateralizadaSuperior {
 position: absolute;
-top: 5%;
+top: 15%;
 left: 85%;
 transform: translateX(-50%) rotate(-45deg);
-width: 140px; 
-height: 280px;
 }
 .imagemPequenalateralizada {
 position: absolute;
@@ -167,7 +173,7 @@ left: 57%;
 }
 .imagemPequenalateralizadaSuperior {
 position: absolute;
-top: 7%;
+top: 20%;
 left: 85%;
 transform: translateX(-50%) rotate(-45deg);
 width: 100px; 
@@ -194,7 +200,7 @@ left: 57%;
 
 .imagemPequenalateralizadaSuperior {
 position: absolute;
-top: 10%;
+top: 22%;
 left: 85%;
 transform: translateX(-50%) rotate(-45deg);
 width: 100px; 
@@ -245,21 +251,13 @@ height: 160px;
 .textoSobreImagem {
 font-size: 39px; 
 }
-.imagemPequenalateralizadaSuperior {
-position: absolute;
-top: 27%;
-left: 85%;
-transform: translateX(-50%) rotate(-45deg);
-width: 75px; 
-height: 150px;
+
+.imagemCentralizada {
+    width: max-content;
 }
-.imagemPequenalateralizada {
-position: absolute;
-top: 50%;
-left: 85%;
-transform: translateX(-50%);
-width: 125px; 
-height: 125px;
+
+ .imagemPequenalateralizada {
+    display: none;
 }
 
 }
@@ -274,14 +272,6 @@ left: 85%;
 transform: translateX(-50%) rotate(-45deg);
 width: 75px; 
 height: 150px;
-}
-.imagemPequenalateralizada {
-position: absolute;
-top: 50%;
-left: 85%;
-transform: translateX(-50%);
-width: 125px; 
-height: 125px;
 }
 }
 }

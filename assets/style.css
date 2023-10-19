@@ -67,7 +67,7 @@ nav .mainMenu li a:hover{
 nav .openMenu{
     font-size: 2rem;
     margin: 20px;
-    margin-top: 30px;
+    margin-top:30px;
     display: none;
     cursor: pointer;
 }
@@ -80,8 +80,8 @@ nav .openMenu, .closeMenu, .icons i{
 }
 
 nav .logo{
-    margin: 7px;
-    margin-left: 20px;
+    margin-top: 20px;
+    margin-left: 27px;
     font-size: 25px;
     cursor: pointer;
     min-width:200px;
