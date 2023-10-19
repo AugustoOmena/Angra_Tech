@@ -66,8 +66,8 @@ nav .mainMenu li a:hover{
 
 nav .openMenu{
     font-size: 2rem;
-    margin: 20px;
-    margin-top:30px;
+    margin: 40px;
+    margin-top:35px;
     display: none;
     cursor: pointer;
 }
